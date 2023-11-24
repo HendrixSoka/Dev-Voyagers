@@ -2,7 +2,7 @@
 {
     public enum TipoCursoEnum
     {
-        Curso,
+        Curso = 1,
         Seminarios,
         Conferencias
     }

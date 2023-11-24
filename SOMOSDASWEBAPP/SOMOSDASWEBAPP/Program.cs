@@ -1,7 +1,17 @@
+using SOMOSDASWEBAPP.Context;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+// Add services to the container.
+builder.Services.AddControllersWithViews();
+
+// Add Connection String
+builder.Services.AddDbContext<MyContext>(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("CadenaConexion"))
+);
 
 var app = builder.Build();
 
