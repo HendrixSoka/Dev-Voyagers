@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Z/XtM7PgATQgVoItf2nBzMBz1/jGFsqUxNxL/p/TtttydRypIgYBSQvnkMIFPoIKmykEmEAp3PvWyhp8h25clQ==",
+  "dgSpecHash": "KMSYvlBWNPuUL2xj5FVdpqBOOkNpnYrXvNQqbL+WlkZnhUx5QSwBpjy4wkfQyz3VzHgadXDCTnsZld8feSLNNQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mauricio\\Desktop\\Nueva carpeta\\Dev-Voyagers\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP.csproj",
+  "projectFilePath": "C:\\Users\\Mauricio\\Desktop\\Dev-Voyagers\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mauricio\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\Mauricio\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
