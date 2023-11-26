@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\SOMOSDASWEBAPP.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\ronal\\Source\\Repos\\HendrixSoka\\Dev-Voyagers\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\wwwroot\\css\\inicio.css",
+      "PackagePath": "staticwebassets\\css\\inicio.css"
+    },
+    {
       "Id": "C:\\Users\\ronal\\Source\\Repos\\HendrixSoka\\Dev-Voyagers\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
