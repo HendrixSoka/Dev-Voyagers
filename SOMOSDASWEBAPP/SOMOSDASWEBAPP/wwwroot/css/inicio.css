@@ -51,13 +51,12 @@ body{
 .aviso {
     width: 100%;
     height: 220px;
-    
+     
 }
 .aviso > img{
-        object-fit: cover;
+        object-fit: contain;
         width: 100%;
         height: 100%;
-
 }
 
 #filadw {

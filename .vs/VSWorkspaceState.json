@@ -4,8 +4,10 @@
     "\\SOMOSDASWEBAPP",
     "\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP",
     "\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\Views",
-    "\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\Views\\Home"
+    "\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\Views\\Home",
+    "\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\wwwroot",
+    "\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\wwwroot\\css"
   ],
-  "SelectedNode": "\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\Views\\Home\\AcercaDe.cshtml",
+  "SelectedNode": "\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\wwwroot\\css\\inicio.css",
   "PreviewInSolutionExplorer": false
 }
