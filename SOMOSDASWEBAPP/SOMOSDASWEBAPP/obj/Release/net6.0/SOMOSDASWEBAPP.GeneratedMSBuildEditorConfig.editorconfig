@@ -9,11 +9,11 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SOMOSDASWEBAPP
 build_property.RootNamespace = SOMOSDASWEBAPP
-build_property.ProjectDir = C:\Users\ronal\source\Repos\HendrixSoka\Dev-Voyagers\SOMOSDASWEBAPP\SOMOSDASWEBAPP\
+build_property.ProjectDir = C:\Users\ronal\Source\Repos\HendrixSoka\Dev-Voyagers\SOMOSDASWEBAPP\SOMOSDASWEBAPP\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\ronal\source\Repos\HendrixSoka\Dev-Voyagers\SOMOSDASWEBAPP\SOMOSDASWEBAPP
+build_property.MSBuildProjectDirectory = C:\Users\ronal\Source\Repos\HendrixSoka\Dev-Voyagers\SOMOSDASWEBAPP\SOMOSDASWEBAPP
 build_property._RazorSourceGeneratorDebug = 
 
 [C:/Users/ronal/source/Repos/HendrixSoka/Dev-Voyagers/SOMOSDASWEBAPP/SOMOSDASWEBAPP/Views/Cursos/Create.cshtml]

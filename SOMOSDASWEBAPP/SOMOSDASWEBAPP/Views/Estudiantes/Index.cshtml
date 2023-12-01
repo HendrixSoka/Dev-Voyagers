@@ -4,12 +4,12 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1 style="color: #fff;">Registros de Estudiantes</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" style="color: #fff;">Crear nuevo </a>
 </p>
-<table class="table">
+<table >
     <thead>
         <tr>
             <th>
@@ -26,7 +26,7 @@
     </thead>
     <tbody>
 @foreach (var item in Model) {
-        <tr>
+            <tr class="fila">
             <td>
                 @Html.DisplayFor(modelItem => item.NombreCompleto)
             </td>

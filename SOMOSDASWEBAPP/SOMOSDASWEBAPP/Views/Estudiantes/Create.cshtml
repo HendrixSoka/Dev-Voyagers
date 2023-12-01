@@ -4,37 +4,30 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<h1 style="color: #fff;">Crear Estudiante </h1>
 
-<h4>Estudiante</h4>
 <hr />
-<div class="row">
-    <div class="col-md-4">
+
+<div id="formulario">
+
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="NombreCompleto" class="control-label"></label>
-                <input asp-for="NombreCompleto" class="form-control" />
+            <div class="camp-in">
+            <input asp-for="NombreCompleto" class="form-input" id="form-name" placeholder="Nombre Completo" />
                 <span asp-validation-for="NombreCompleto" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Celular" class="control-label"></label>
-                <input asp-for="Celular" class="form-control" />
+            <div class="camp-in">
+            <input asp-for="Celular" class="form-input" id="form-cell" placeholder="Celular" />
                 <span asp-validation-for="Celular" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="CorreoElectronico" class="control-label"></label>
-                <input asp-for="CorreoElectronico" class="form-control" />
+            <div class="camp-in">
+            <input asp-for="CorreoElectronico" class="form-input" id="form-mail" placeholder="Correo Electronico" />
                 <span asp-validation-for="CorreoElectronico" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div id="enlace" style="display:none;">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>
-    </div>
-</div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
 </div>
-
+<script src="~/js/crudE.js" asp-append-version="true"></script>

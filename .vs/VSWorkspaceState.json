@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\SOMOSDASWEBAPP",
+    "\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP",
+    "\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\Controllers",
+    "\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\Views",
+    "\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\Views\\Home",
+    "\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\wwwroot",
+    "\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\wwwroot\\css"
+  ],
+  "SelectedNode": "\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\Controllers\\HomeController.cs",
+  "PreviewInSolutionExplorer": false
+}

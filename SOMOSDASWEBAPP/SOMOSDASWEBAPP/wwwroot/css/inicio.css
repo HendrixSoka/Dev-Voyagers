@@ -54,6 +54,7 @@ body {
     width: 100%;
     margin-top: 80px;
     margin-left: 170px;
+    color:#fff;
     overflow: scroll;
 }
 
@@ -103,4 +104,64 @@ th {
 
 .fila:hover {
     background-color: rgb(29, 100, 130);
+}
+h1 {
+    color =#fff;
+}
+#formulario {
+    max-width: 400px;
+    color : #fff;
+    margin: 0 auto;
+    padding: 20px;
+    display :flex;
+}
+.form-input {
+    margin-bottom: 15px;
+    background-color: rgb(29, 100, 130);
+    color: #04AA6D;
+}
+.control-label {
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 4px;
+    transition: 0.3;
+    pointer-events: none;
+}
+
+input,
+select {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid #04AA6D;
+}
+.camp-in {
+    position: relative;
+}
+dl.row {
+    background-color: #333; 
+    border-radius: 8px; 
+    padding: 20px; 
+}
+
+dt, dd {
+    padding: 10px; 
+    margin: 0; 
+}
+
+
+dt {
+    background-color: rgb(18, 63, 83); 
+    color: #fff; 
+}
+
+
+dd {
+    background-color: #444; 
+    color: #fff; 
 }

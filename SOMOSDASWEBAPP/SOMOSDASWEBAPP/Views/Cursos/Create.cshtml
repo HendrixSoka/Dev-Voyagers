@@ -4,36 +4,34 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<h1>Create Curso</h1>
 
-<h4>Curso</h4>
 <hr />
-<div class="row">
-    <div class="col-md-4">
+    <div id="formulario">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Duracion" class="control-label"></label>
-                <input asp-for="Duracion" class="form-control" />
+        <div class="camp-in">
+
+            <input asp-for="Duracion" class="form-input" id="form-dur" placeholder="Duracion" />
                 <span asp-validation-for="Duracion" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Tema" class="control-label"></label>
-                <input asp-for="Tema" class="form-control" />
+        <div class="camp-in">
+
+            <input asp-for="Tema" class="form-input"  id="form-tema" placeholder="Tema" />
                 <span asp-validation-for="Tema" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Docente" class="control-label"></label>
-                <input asp-for="Docente" class="form-control" />
+        <div class="camp-in">
+
+            <input asp-for="Docente" class="form-input"  id="form-docente" placeholder="Docente" />
                 <span asp-validation-for="Docente" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="CuposCurso" class="control-label"></label>
-                <input asp-for="CuposCurso" class="form-control" />
+        <div class="camp-in">
+
+            <input asp-for="CuposCurso" class="form-input" id="form-cant" placeholder="Cupos Curso" />
                 <span asp-validation-for="CuposCurso" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Tipo" class="control-label"></label>
+        <div class="camp-in">
+              
                 <select asp-for="Tipo" class="form-control">
                     <option value="1">Curso</option>
                     <option value="2">Seminario</option>
@@ -41,12 +39,13 @@
                 </select>
                 <span asp-validation-for="Tipo" class="text-danger"></span>
             </div>
-            <div class="form-group">
+        <div id="enlace" style="display:none;">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>
     </div>
-</div>
+<script src="~/js/crudC.js" asp-append-version="true"></script>
+
 
 <div>
     <a asp-action="Index">Back to List</a>

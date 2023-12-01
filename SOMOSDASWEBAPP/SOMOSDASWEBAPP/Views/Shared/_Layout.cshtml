@@ -9,6 +9,7 @@
      <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
        <link rel="stylesheet" href="~/SOMOSDASWEBAPP.styles.css" asp-append-version="true" />-->
     <link rel="stylesheet" href="~/css/inicio.css">
+    <link rel="stylesheet" href="~/css/style_login.css">
     <script src="https://kit.fontawesome.com/fb4f4ab695.js" crossorigin="anonymous"></script>
 
 </head>
@@ -31,11 +32,15 @@
                 <a asp-area="" asp-controller="Home" asp-action="Index"><i class="fas fa-home"></i>  Inicio</a>
             </div>
             <div>
-                <a asp-area="" asp-controller="Home" asp-action="Privacy"><i class="fas fa-user-plus"></i>  Gestor de Alumnos</a>
+                <a asp-area="" asp-controller="Estudiantes" asp-action="Index"><i class="fas fa-user-plus"></i>  Gestor de Alumnos</a>
             </div>
             <div>
-                <a asp-area="" asp-controller="Home" asp-action="AcercaDe"><i class="fas fa-book-open"></i>  Gestor de Cursos</a>
+                <a asp-area="" asp-controller="Cursos" asp-action="Index"><i class="fas fa-book-open"></i>  Gestor de Cursos</a>
             </div>
+            <div>
+                <a asp-area="" asp-controller="Usuarios" asp-action="Index"><i class="fas fa-user-tie"></i>  Gestor de Usuarios</a>
+            </div>
+
 
         </div>
 
@@ -53,8 +58,9 @@
       </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
       <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-      <script src="~/js/site.js" asp-append-version="true"></script>
+      
 
       -->
+    
 </body>
 </html>
