@@ -1,14 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\SOMOSDASWEBAPP",
-    "\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP",
-    "\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\Controllers",
-    "\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\Views",
-    "\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\Views\\Home",
-    "\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\wwwroot",
-    "\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\wwwroot\\css"
+    ""
   ],
-  "SelectedNode": "\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\Controllers\\HomeController.cs",
+  "SelectedNode": "\\C:\\Users\\ANCASI\\Source\\Repos\\Dev-Voyagers",
   "PreviewInSolutionExplorer": false
 }

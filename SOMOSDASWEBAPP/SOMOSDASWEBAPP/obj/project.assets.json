@@ -11212,19 +11212,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ronal\\.nuget\\packages\\": {}
+    "C:\\Users\\ANCASI\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ronal\\Source\\Repos\\HendrixSoka\\Dev-Voyagers\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP.csproj",
+      "projectUniqueName": "C:\\Users\\ANCASI\\Source\\Repos\\Dev-Voyagers\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP.csproj",
       "projectName": "SOMOSDASWEBAPP",
-      "projectPath": "C:\\Users\\ronal\\Source\\Repos\\HendrixSoka\\Dev-Voyagers\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP.csproj",
-      "packagesPath": "C:\\Users\\ronal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ronal\\Source\\Repos\\HendrixSoka\\Dev-Voyagers\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\obj\\",
+      "projectPath": "C:\\Users\\ANCASI\\Source\\Repos\\Dev-Voyagers\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP.csproj",
+      "packagesPath": "C:\\Users\\ANCASI\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ANCASI\\Source\\Repos\\Dev-Voyagers\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ronal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ANCASI\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11294,7 +11294,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
