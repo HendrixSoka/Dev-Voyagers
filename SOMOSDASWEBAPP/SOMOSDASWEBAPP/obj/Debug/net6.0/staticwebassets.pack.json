@@ -281,8 +281,16 @@
       "PackagePath": "staticwebassets\\pictures\\log.png"
     },
     {
+      "Id": "C:\\Users\\ronal\\Source\\Repos\\HendrixSoka\\Dev-Voyagers\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\wwwroot\\pictures\\logo.jpg",
+      "PackagePath": "staticwebassets\\pictures\\logo.jpg"
+    },
+    {
       "Id": "C:\\Users\\ronal\\Source\\Repos\\HendrixSoka\\Dev-Voyagers\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\wwwroot\\pictures\\pc.png",
       "PackagePath": "staticwebassets\\pictures\\pc.png"
+    },
+    {
+      "Id": "C:\\Users\\ronal\\Source\\Repos\\HendrixSoka\\Dev-Voyagers\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\wwwroot\\pictures\\portada.jpg",
+      "PackagePath": "staticwebassets\\pictures\\portada.jpg"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.SOMOSDASWEBAPP.Microsoft.AspNetCore.StaticWebAssets.props",

@@ -1,5 +1,6 @@
 {
   "ExpandedNodes": [
+<<<<<<< HEAD
     "",
     "\\SOMOSDASWEBAPP",
     "\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP",
@@ -11,5 +12,10 @@
     "\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\wwwroot\\css"
   ],
   "SelectedNode": "\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\Views\\Usuarios\\Create.cshtml",
+=======
+    ""
+  ],
+  "SelectedNode": "\\C:\\Users\\ANCASI\\Source\\Repos\\Dev-Voyagers",
+>>>>>>> ec670edd096aee38f1f78b37d5a46c7db0f172ae
   "PreviewInSolutionExplorer": false
 }

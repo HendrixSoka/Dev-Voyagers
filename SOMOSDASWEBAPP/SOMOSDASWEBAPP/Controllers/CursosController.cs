@@ -13,10 +13,13 @@ namespace SOMOSDASWEBAPP.Controllers
     public class CursosController : Controller
     {
         private readonly MyContext _context;
+        private readonly IWebHostEnvironment _webHostEnvironment;
 
-        public CursosController(MyContext context)
+        public CursosController(MyContext context , IWebHostEnvironment webHostEnvironment)
         {
             _context = context;
+            _webHostEnvironment = webHostEnvironment;
+
         }
 
         // GET: Cursos
@@ -88,7 +91,7 @@ namespace SOMOSDASWEBAPP.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("CodCurso,Duracion,Tema,Docente,CuposCurso,Tipo")] Curso curso)
+        public async Task<IActionResult> Edit(int id, [Bind("CodCurso,Duracion,Tema,Docente,CuposCurso,Tipo,")] Curso curso)
         {
             if (id != curso.CodCurso)
             {
@@ -99,6 +102,12 @@ namespace SOMOSDASWEBAPP.Controllers
             {
                 try
                 {
+                    //cargar la foto
+                    if (curso.FotoFile != null)
+                    {
+                        await SubirFoto(curso);
+                    }
+
                     _context.Update(curso);
                     await _context.SaveChangesAsync();
                 }
@@ -116,6 +125,21 @@ namespace SOMOSDASWEBAPP.Controllers
                 return RedirectToAction(nameof(Index));
             }
             return View(curso);
+        }
+
+        private async Task SubirFoto(Curso curso)
+        {
+            //formar el nombre del archivo foto
+            string wwRootPath = _webHostEnvironment.WebRootPath;
+            string extension = Path.GetExtension(curso.FotoFile!.FileName);
+            string nombreFoto = $"{curso.CodCurso}{extension}";
+
+          //  curso.Foto = nombreFoto;
+
+            //copiar la foto en el proyecto del servidor
+            string path = Path.Combine($"{wwRootPath}/pictures/cursos", nombreFoto);
+            var fileStream = new FileStream(path, FileMode.Create);
+            await curso.FotoFile.CopyToAsync(fileStream);
         }
 
         // GET: Cursos/Delete/5

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "y6NyzOcCiA+KrPjGTcaiQWQdqUqFwzTOqY25j6O7azA=",
+  "Hash": "FolmIusz7i2MOZ7u2yN3I+BMHHaMxfnhWoQPpkkJDY0=",
   "Source": "SOMOSDASWEBAPP",
   "BasePath": "_content/SOMOSDASWEBAPP",
   "Mode": "Default",
@@ -1224,6 +1224,23 @@
       "OriginalItemSpec": "wwwroot\\pictures\\log.png"
     },
     {
+      "Identity": "C:\\Users\\ronal\\Source\\Repos\\HendrixSoka\\Dev-Voyagers\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\wwwroot\\pictures\\logo.jpg",
+      "SourceId": "SOMOSDASWEBAPP",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ronal\\Source\\Repos\\HendrixSoka\\Dev-Voyagers\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\wwwroot\\",
+      "BasePath": "_content/SOMOSDASWEBAPP",
+      "RelativePath": "pictures/logo.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\pictures\\logo.jpg"
+    },
+    {
       "Identity": "C:\\Users\\ronal\\Source\\Repos\\HendrixSoka\\Dev-Voyagers\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\wwwroot\\pictures\\pc.png",
       "SourceId": "SOMOSDASWEBAPP",
       "SourceType": "Discovered",
@@ -1239,6 +1256,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\pictures\\pc.png"
+    },
+    {
+      "Identity": "C:\\Users\\ronal\\Source\\Repos\\HendrixSoka\\Dev-Voyagers\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\wwwroot\\pictures\\portada.jpg",
+      "SourceId": "SOMOSDASWEBAPP",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ronal\\Source\\Repos\\HendrixSoka\\Dev-Voyagers\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\wwwroot\\",
+      "BasePath": "_content/SOMOSDASWEBAPP",
+      "RelativePath": "pictures/portada.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\pictures\\portada.jpg"
     }
   ]
 }
