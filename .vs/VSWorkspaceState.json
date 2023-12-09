@@ -6,9 +6,10 @@
     "\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\Controllers",
     "\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\Views",
     "\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\Views\\Home",
+    "\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\Views\\Usuarios",
     "\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\wwwroot",
     "\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\wwwroot\\css"
   ],
-  "SelectedNode": "\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\Controllers\\HomeController.cs",
+  "SelectedNode": "\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\Views\\Usuarios\\Create.cshtml",
   "PreviewInSolutionExplorer": false
 }
