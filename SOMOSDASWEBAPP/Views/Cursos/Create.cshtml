@@ -1,0 +1,53 @@
+﻿@model SOMOSDASWEBAPP.Models.Curso
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create Curso</h1>
+
+<hr />
+    <div id="formulario">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="camp-in">
+
+            <input asp-for="Duracion" class="form-input" id="form-dur" placeholder="Duracion" />
+                <span asp-validation-for="Duracion" class="text-danger"></span>
+            </div>
+        <div class="camp-in">
+
+            <input asp-for="Tema" class="form-input"  id="form-tema" placeholder="Tema" />
+                <span asp-validation-for="Tema" class="text-danger"></span>
+            </div>
+        <div class="camp-in">
+
+            <input asp-for="Docente" class="form-input"  id="form-docente" placeholder="Docente" />
+                <span asp-validation-for="Docente" class="text-danger"></span>
+            </div>
+        <div class="camp-in">
+
+            <input asp-for="CuposCurso" class="form-input" id="form-cant" placeholder="Cupos Curso" />
+                <span asp-validation-for="CuposCurso" class="text-danger"></span>
+            </div>
+        <div class="camp-in">
+              
+                <select asp-for="Tipo" class="form-control">
+                    <option value="1">Curso</option>
+                    <option value="2">Seminario</option>
+                    <option value="3">Conferencia</option>
+                </select>
+                <span asp-validation-for="Tipo" class="text-danger"></span>
+            </div>
+        <div id="enlace" style="display:none;">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+<script src="~/js/crudC.js" asp-append-version="true"></script>
+
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
