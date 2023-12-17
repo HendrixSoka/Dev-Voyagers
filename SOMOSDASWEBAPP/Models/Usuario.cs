@@ -15,5 +15,9 @@ namespace SOMOSDASWEBAPP.Models
         public string? NombreCompleto { get; set; }
         [Required]
         public RolEnum Rol { get; set; }
+
+        ///Relacion 
+       
+        public virtual List<Inscripcion>? Inscripciones{ get; set; }
     }
 }
