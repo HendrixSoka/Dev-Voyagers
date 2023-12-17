@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SOMOSDASWEBAPP</title>
+
+    <!--  <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+       <link rel="stylesheet" href="~/SOMOSDASWEBAPP.styles.css" asp-append-version="true" />-->
+    <link rel="stylesheet" href="~/css/inicio.css">
+    <link rel="stylesheet" href="~/css/style_login.css">
+    <script src="https://kit.fontawesome.com/fb4f4ab695.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header class="portada">
+        <h1>SomosDas</h1>
+        <!-- <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">SOMOSDASWEBAPP</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav> -->
+    </header>
+    <div class="cajaM">
+        <div class="menu">
+            <div>
+                <a asp-area="" asp-controller="Home" asp-action="Index"><i class="fas fa-home"></i>  Inicio</a>
+            </div>
+            <div>
+                <a asp-area="" asp-controller="Estudiantes" asp-action="Index"><i class="fas fa-user-plus"></i>  Gestor de Alumnos</a>
+            </div>
+            <div>
+                <a asp-area="" asp-controller="Cursos" asp-action="Index"><i class="fas fa-book-open"></i>  Gestor de Cursos</a>
+            </div>
+            <div>
+                <a asp-area="" asp-controller="Usuarios" asp-action="Index"><i class="fas fa-user-tie"></i>  Gestor de Usuarios</a>
+            </div>
+
+
+        </div>
+
+        <div class="content">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+    </div>
+
+    <!--   <footer class="border-top footer text-muted">
+          <div class="container">
+              &copy; 2023 - SOMOSDASWEBAPP - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+          </div>
+      </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+      <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+      
+
+      -->
+    
+</body>
+</html>

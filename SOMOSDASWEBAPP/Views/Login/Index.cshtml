@@ -1,0 +1,58 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesion Somosdas</title>
+    <link rel="stylesheet" href="~/css/style_login.css">
+</head>
+<body>
+<div class="container">
+    
+    <div class="login">
+        
+        <div class="name">
+                <img src="~/pictures/logo.jpg" width="100%" height="100%">
+        </div >
+            <div  class="componentes">
+                <h1 >Ingresar</h1>
+                <form asp-action="Login" asp-controller="Login" method="post"  class="form">
+                    <div class="camp-user">
+                    
+                        <input type="text" name ="correo" id="miuser" class="input-field" >
+                        <label for="miuser" class="placeholderu"> NOMBRE DE USUARIO </label>
+                     </div>
+                     <div class="camp-pass">
+               
+                     <input type="password" name ="contrasena" id="mipass" class="input-field">
+                     <label for="miPassword" class="placeholder"> CONTRASEÑA </label>
+                     </div>
+                    <div class="boton">
+                        <button class="log" id="enlace" style="display: none" type="submit"><img src="~/pictures/log.png" width="100%" height="100%"></button>
+                    </div>
+                    @if (TempData["LoginError"] != null)
+                    {
+                        <div class="alert alert-danger mt-5">@TempData["LoginError"]</div>
+                    }
+             </form>
+             <div class="boton">
+
+                    <a asp-area="" asp-controller="Home" asp-action="Index" class="invite">
+                        <img src="~/pictures/invitado.png" width="100%" height="100%">
+                        </a>
+             </div>
+             
+            </div>
+    </div>
+    <div class="img_L">
+            <img src="~/pictures/portada.jpg" width="100%" height="100%">
+    </div>
+</div>
+    <script src="~/js/loginjs.js"></script>
+</body>
+</html>
