@@ -1,8 +1,10 @@
-﻿using SOMOSDASWEBAPP.Dtos;
+﻿using Microsoft.AspNetCore.Authorization;
+using SOMOSDASWEBAPP.Dtos;
 using System.ComponentModel.DataAnnotations;
 
 namespace SOMOSDASWEBAPP.Models
 {
+  
     public class Usuario
     {
         [Key]

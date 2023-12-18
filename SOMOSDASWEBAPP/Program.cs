@@ -1,5 +1,6 @@
 using SOMOSDASWEBAPP.Context;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +13,14 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<MyContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("CadenaConexion"))
 );
+
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(option => {
+        option.LoginPath = "/Login/Index";
+        option.ExpireTimeSpan = TimeSpan.FromMinutes(30);
+        option.AccessDeniedPath = "/Home/Privacy";
+});
+
 
 var app = builder.Build();
 
@@ -27,6 +36,8 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 

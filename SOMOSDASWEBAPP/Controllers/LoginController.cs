@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -34,6 +37,7 @@ namespace SOMOSDASWEBAPP.Controllers
 
             if (usuario != null) //se ha encontrado al usuario
             {
+                await SetAuthenticationInCookie(usuario);
                 return RedirectToAction("Index", "Home");
             }
             else
@@ -42,5 +46,27 @@ namespace SOMOSDASWEBAPP.Controllers
                 return Redirect("Index");
             }
         }
+        private async Task SetAuthenticationInCookie(Usuario? user)
+        {
+            var claims = new List<Claim>()
+                {
+                    new Claim(ClaimTypes.Name, user.NombreCompleto!),
+                    new Claim("Email", user.Email!),
+                    new Claim("Id", user.Id.ToString()),
+                    new Claim(ClaimTypes.Role, user.Rol!.ToString()),
+                };
+
+            var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+
+            await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity));
+        }
+
+        public async Task<IActionResult> Logout()
+        {
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+
+            return RedirectToAction("Index", "Login");
+        }
+
     }
 }
