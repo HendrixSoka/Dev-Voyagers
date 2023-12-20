@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Identity;
+@using System.Security.Claims;
+
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="utf-8" />
@@ -28,18 +31,40 @@
     </header>
     <div class="cajaM">
         <div class="menu">
-            <div>
-                <a asp-area="" asp-controller="Home" asp-action="Index"><i class="fas fa-home"></i>  Inicio</a>
+            @if (User.IsInRole("Director") || User.IsInRole("Secretaria"))
+            {
+                <div>
+                    <a asp-area="" asp-controller="Home" asp-action="Index"><i class="fas fa-home"></i>  Inicio</a>
+                </div>
+                <div>
+                    <a asp-area="" asp-controller="Estudiantes" asp-action="Index"><i class="fas fa-user-plus"></i>  Gestor de Alumnos</a>
+                </div>
+                <div>
+                    <a asp-area="" asp-controller="Cursos" asp-action="Index"><i class="fas fa-book-open"></i>  Gestor de Cursos</a>
+                </div>
+                @if (User.IsInRole("Director"))
+                {
+                    <div>
+                        <a asp-area="" asp-controller="Usuarios" asp-action="Index"><i class="fas fa-user-tie"></i>  Gestor de Usuarios</a>
+                    </div>
+                }
+            }
+            else
+            {
+                
+                <div>
+                    <a asp-area="" asp-controller="Home" asp-action="Index"><i class="fas fa-home"></i>  Inicio</a>
+                </div>
+            }
+
+            <div class="d-flex">
+                <span class="navbar-text">
+                    @User.Identity?.Name | @User.FindFirstValue(ClaimTypes.Role)
+                </span>
+
+                <a class="nav-link" asp-controller="Login" asp-action="Logout">Salir</a>
             </div>
-            <div>
-                <a asp-area="" asp-controller="Estudiantes" asp-action="Index"><i class="fas fa-user-plus"></i>  Gestor de Alumnos</a>
-            </div>
-            <div>
-                <a asp-area="" asp-controller="Cursos" asp-action="Index"><i class="fas fa-book-open"></i>  Gestor de Cursos</a>
-            </div>
-            <div>
-                <a asp-area="" asp-controller="Usuarios" asp-action="Index"><i class="fas fa-user-tie"></i>  Gestor de Usuarios</a>
-            </div>
+
 
 
         </div>

@@ -11217,11 +11217,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mauricio\\Downloads\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP.csproj",
+      "projectUniqueName": "C:\\Users\\Mauricio\\Downloads\\Dev-Voyagers\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP.csproj",
       "projectName": "SOMOSDASWEBAPP",
-      "projectPath": "C:\\Users\\Mauricio\\Downloads\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP.csproj",
+      "projectPath": "C:\\Users\\Mauricio\\Downloads\\Dev-Voyagers\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP.csproj",
       "packagesPath": "C:\\Users\\Mauricio\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mauricio\\Downloads\\SOMOSDASWEBAPP\\SOMOSDASWEBAPP\\obj\\",
+      "outputPath": "C:\\Users\\Mauricio\\Downloads\\Dev-Voyagers\\SOMOSDASWEBAPP\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Mauricio\\AppData\\Roaming\\NuGet\\NuGet.Config",
