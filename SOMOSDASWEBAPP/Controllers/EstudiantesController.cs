@@ -20,9 +20,24 @@ namespace SOMOSDASWEBAPP.Controllers
         }
 
         // GET: Estudiantes
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string search)
         {
-              return _context.Estudiante != null ? 
+            ICollection<Estudiante> Estudiantes;
+
+            if (string.IsNullOrEmpty(search))
+            {
+                Estudiantes = await _context.Estudiante
+                    .OrderBy(x => x.NombreCompleto)
+                    .ToListAsync();
+            }
+            else
+            {
+                Estudiantes = await _context.Estudiante
+                    .Where(x => x.CedulaIdentidad.ToString().Contains(search) || x.NombreCompleto!.Contains(search))
+                    .OrderBy(x => x.NombreCompleto)
+                    .ToListAsync();
+            }
+            return _context.Estudiante != null ? 
                           View(await _context.Estudiante.ToListAsync()) :
                           Problem("Entity set 'MyContext.Estudiante'  is null.");
         }

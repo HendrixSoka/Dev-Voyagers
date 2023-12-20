@@ -22,13 +22,28 @@ namespace SOMOSDASWEBAPP.Controllers
         }
 
         // GET: Usuarios
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string search)
         {
-              return _context.Usuario != null ? 
-                          View(await _context.Usuario.ToListAsync()) :
-                          Problem("Entity set 'MyContext.Usuario'  is null.");
-        }
+            ICollection<Usuario> Usuario;
 
+            if (string.IsNullOrEmpty(search))
+            {
+                Usuario = await _context.Usuario
+                    .OrderBy(x => x.NombreCompleto)
+                    .ToListAsync();
+            }
+            else
+            {
+                Usuario = await _context.Usuario
+                    .Where(x =>  x.NombreCompleto!.Contains(search))
+                    .OrderBy(x => x.NombreCompleto)
+                    .ToListAsync();
+            }
+
+            return _context.Usuario != null ?
+                        View(Usuario) :
+                        Problem("Entity set 'MiContext.Usuario'  is null.");
+        }
         // GET: Usuarios/Details/5
         public async Task<IActionResult> Details(int? id)
         {

@@ -9,9 +9,23 @@
 <p>
     <a asp-action="Create" style="color: #fff;">Crear nuevo </a>
 </p>
+<form asp-action="Index" asp-controller="Estudiantes" method="post">
+    <div class="row">
+        <div class="col-sm-10 form-group">
+            <label for="search" class="control-label">Buscar por Codigo o Nombre </label>
+            <input name="search" id="search" class="form-control" />
+        </div>
+        <div class="col-sm-2">
+            <button type="submit" class="btn btn-dark mt-4">Buscar</button>
+        </div>
+    </div>
+</form>
 <table >
     <thead>
         <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CedulaIdentidad)
+            </th>
             <th>
                 @Html.DisplayNameFor(model => model.NombreCompleto)
             </th>
@@ -27,6 +41,9 @@
     <tbody>
 @foreach (var item in Model) {
             <tr class="fila">
+                <td>
+                    @Html.DisplayFor(modelItem => item.CedulaIdentidad)
+                </td>
             <td>
                 @Html.DisplayFor(modelItem => item.NombreCompleto)
             </td>
@@ -37,9 +54,9 @@
                 @Html.DisplayFor(modelItem => item.CorreoElectronico)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.CedulaIdentidad">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.CedulaIdentidad">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.CedulaIdentidad">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.CedulaIdentidad">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.CedulaIdentidad">Detalles</a> |
+                <a asp-action="Delete" asp-route-id="@item.CedulaIdentidad">Eliminar</a>
             </td>
         </tr>
 }
