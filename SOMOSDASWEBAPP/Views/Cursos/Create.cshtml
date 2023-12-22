@@ -12,6 +12,11 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
         <div class="camp-in">
 
+            <input asp-for="CodCurso" class="form-input" id="form-dur" placeholder="Codigo Curso" />
+            <span asp-validation-for="CodCurso" class="text-danger"></span>
+        </div>
+        <div class="camp-in">
+
             <input asp-for="Duracion" class="form-input" id="form-dur" placeholder="Duracion" />
                 <span asp-validation-for="Duracion" class="text-danger"></span>
             </div>
@@ -48,6 +53,6 @@
 
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Volver</a>
 </div>
 

@@ -42,12 +42,16 @@
                 <div>
                     <a asp-area="" asp-controller="Cursos" asp-action="Index"><i class="fas fa-book-open"></i>  Gestor de Cursos</a>
                 </div>
+                
                 @if (User.IsInRole("Director"))
                 {
                     <div>
                         <a asp-area="" asp-controller="Usuarios" asp-action="Index"><i class="fas fa-user-tie"></i>  Gestor de Usuarios</a>
                     </div>
                 }
+                <div>
+                    <a asp-area="" asp-controller="Inscripcions" asp-action="Index"><i class="fas fa-book-open"></i>  Inscripcion</a>
+                </div>
             }
             else
             {
@@ -86,6 +90,6 @@
       
 
       -->
-    
+    @RenderSection("Scripts", required: false)
 </body>
 </html>

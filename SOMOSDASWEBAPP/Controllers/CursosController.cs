@@ -23,9 +23,24 @@ namespace SOMOSDASWEBAPP.Controllers
         }
 
         // GET: Cursos
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string search)
         {
-              return _context.Curso != null ? 
+            ICollection<Curso> Cursos;
+
+            if (string.IsNullOrEmpty(search))
+            {
+                Cursos = await _context.Curso
+                    .OrderBy(x => x.CodCurso)
+                    .ToListAsync();
+            }
+            else
+            {
+                Cursos = await _context.Curso
+                    .Where(x => x.CodCurso.ToString().Contains(search))
+                    .OrderBy(x => x.CodCurso)
+                    .ToListAsync();
+            }
+            return _context.Curso != null ? 
                           View(await _context.Curso.ToListAsync()) :
                           Problem("Entity set 'MyContext.Curso'  is null.");
         }

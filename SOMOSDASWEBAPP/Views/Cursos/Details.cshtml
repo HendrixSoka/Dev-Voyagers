@@ -9,6 +9,9 @@
 <div>
     <hr />
     <dl >
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CodCurso)
+        </dt>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Duracion)
         </dt>
@@ -41,7 +44,7 @@
         </dd>
     </dl>
 </div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.CodCurso">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+<div>|
+    <a asp-action="Index">Volver</a>
 </div>
+<partial name="~/Views/Inscripcions/Create.cshtml" model="new Inscripcion()"></partial>

@@ -13,5 +13,6 @@ namespace SOMOSDASWEBAPP.Context
         public DbSet<Usuario> Usuario { get; set; }
         public DbSet<Curso> Curso { get; set; }
         public DbSet<Estudiante> Estudiante { get; set; }
+        public DbSet<SOMOSDASWEBAPP.Models.Inscripcion>? Inscripcion { get; set; }
     }
 }
