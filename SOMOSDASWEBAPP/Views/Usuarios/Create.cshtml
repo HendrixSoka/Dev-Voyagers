@@ -1,0 +1,40 @@
+﻿@model SOMOSDASWEBAPP.Models.Usuario
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1 >Crear Usuario</h1>
+<hr />
+    <div  id="formulario" >
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="camp-in">
+
+            <input asp-for="Email" class="form-input" id="form-email" placeholder="Correo Electronico" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="camp-in">
+
+            <input asp-for="Password" class="form-input" id="form-pass" placeholder="Contraseña" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="camp-in">
+
+            <input asp-for="NombreCompleto" class="form-input" id="form-nombre" placeholder="Nombre Completo" />
+                <span asp-validation-for="NombreCompleto" ></span>
+            </div>
+            <div class="camp-in">
+                <select asp-for="Rol" class="form-control">
+                    <option value="1">Director</option>
+                    <option value="2">Secretaria</option>
+                </select>
+                <span asp-validation-for="Rol" class="text-danger"></span>
+            </div>
+            <div id="enlace" style="display:none;">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+<script src="~/js/crudU.js" asp-append-version="true"></script>
+
