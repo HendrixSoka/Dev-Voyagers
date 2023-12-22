@@ -165,3 +165,28 @@ dd {
     background-color: #444; 
     color: #fff; 
 }
+a{
+    color:#fff;
+}
+button {
+    background-color: rgb(24, 118, 160); 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px;
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 4px; 
+}
+edit {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+}
+ledit{
+    display:block;
+}
