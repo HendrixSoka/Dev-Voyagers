@@ -42,7 +42,9 @@
                 <div>
                     <a asp-area="" asp-controller="Cursos" asp-action="Index"><i class="fas fa-book-open"></i>  Gestor de Cursos</a>
                 </div>
-                
+                <div>
+                    <a asp-area="" asp-controller="Reporte" asp-action="Index"><i class="fas fa-table"></i>  Reporte de Caja</a>
+                </div>
                 @if (User.IsInRole("Director"))
                 {
                     <div>

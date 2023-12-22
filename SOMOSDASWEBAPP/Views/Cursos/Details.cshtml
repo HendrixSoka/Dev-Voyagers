@@ -1,7 +1,7 @@
 ﻿@model SOMOSDASWEBAPP.Models.Curso
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Detalles";
 }
 
 <h1>Detalles Curso</h1>
@@ -12,6 +12,9 @@
         <dt >
             @Html.DisplayNameFor(model => model.CodCurso)
         </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CodCurso)
+        </dd>
         <dt c>
             @Html.DisplayNameFor(model => model.Duracion)
         </dt>
@@ -44,15 +47,9 @@
         </dd>
     </dl>
 </div>
-<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
 
-    <a class="a2a_button_facebook" href="https://www.facebook.com"> </a>
-    <a class="a2a_button_whatsapp" href="whatsapp://send?text=TU_TEXTO%20-%20SOMOSDAS"> </a>
-    <a class="a2a_button_x" href="https://twitter.com> </a>
-</div>
-<script async src="https://static.addtoany.com/menu/page.js"></script>
+
 
 <div>|
     <a asp-action="Index">Volver</a>
 </div>
-<partial name="~/Views/Inscripcions/Create.cshtml" model="new Inscripcion()"></partial>

@@ -38,7 +38,7 @@ namespace SOMOSDASWEBAPP.Controllers
                     .ToListAsync();
             }
             return _context.Estudiante != null ? 
-                          View(await _context.Estudiante.ToListAsync()) :
+                          View(Estudiantes) :
                           Problem("Entity set 'MyContext.Estudiante'  is null.");
         }
 

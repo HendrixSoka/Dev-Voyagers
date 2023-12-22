@@ -41,7 +41,7 @@ namespace SOMOSDASWEBAPP.Controllers
                     .ToListAsync();
             }
             return _context.Curso != null ? 
-                          View(await _context.Curso.ToListAsync()) :
+                          View(Cursos) :
                           Problem("Entity set 'MyContext.Curso'  is null.");
         }
 

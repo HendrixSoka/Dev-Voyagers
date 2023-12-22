@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\SOMOSDASWEBAPP",
+    "\\SOMOSDASWEBAPP\\Views",
+    "\\SOMOSDASWEBAPP\\Views\\Cursos"
   ],
-  "SelectedNode": "\\SOMOSDASWEBAPP.sln",
+  "SelectedNode": "\\SOMOSDASWEBAPP\\Views\\Cursos\\Details.cshtml",
   "PreviewInSolutionExplorer": false
 }

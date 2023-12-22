@@ -1,0 +1,35 @@
+﻿@model SOMOSDASWEBAPP.Models.Usuario
+@{
+    ViewData["Title"] = "Reporte";
+}
+
+<h1>Reporte de Caja</h1>
+<p>@Html.DisplayFor(model => model.Email)</p>
+<p> @Html.DisplayFor(model => model.NombreCompleto) </p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Nro</th>
+            <th>Codigo</th>
+            <th>Fecha</th>
+            <th>Monto</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            int nro = 1;
+        }
+        @foreach (var item in Model.Inscripciones!)
+        {
+            <tr class="fila">
+                <td>@nro</td>
+                <td>@Html.DisplayFor(modelItem => item.NroRecibo)</td>
+                <td>@Html.DisplayFor(modelItem => item.Fecha)</td>
+                <td>@Html.DisplayFor(modelItem => item.Costo)</td>
+            </tr>
+            nro++;
+        }
+    </tbody>
+</table>
+

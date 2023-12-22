@@ -1,7 +1,7 @@
 ﻿@model SOMOSDASWEBAPP.Models.Curso
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Editar";
 }
 
 <h1>Editar Curso</h1>
@@ -34,7 +34,12 @@
             </div>
             <div class="form-group">
                 <label asp-for="Tipo" style="display:block"></label>
-                <select asp-for="Tipo" class="form-control"></select>
+               
+                <select asp-for="Tipo" class="form-control">
+                    <option value="1">Curso</option>
+                    <option value="2">Seminario</option>
+                    <option value="3">Conferencia</option>
+                </select>
                 <span asp-validation-for="Tipo" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -43,7 +48,7 @@
                 <span asp-validation-for="FotoFile" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Guardar" class="btn btn-primary" />
             </div>
         </form>
     </div>

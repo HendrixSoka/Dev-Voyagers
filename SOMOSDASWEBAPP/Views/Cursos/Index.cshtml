@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<SOMOSDASWEBAPP.Models.Curso>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Cursos";
 }
 
 <h1 style="color: #fff;">Registros de Cursos</h1>
@@ -12,7 +12,7 @@
 <form asp-action="Index" asp-controller="Cursos" method="post">
     <div >
         <div >
-            <label for="search" class="ledit" >Buscar por Codigo </label>
+            <label for="search" style="display:block" >Buscar por Codigo </label>
             <input name="search" id="search" class="form-control" />
         </div>
         <div >
@@ -66,10 +66,17 @@
                 @Html.DisplayFor(modelItem => item.Tipo)
             </td>
             <td>
-                    <a class="btn-success" asp-action="Details" asp-route-id="@item.CodCurso">Registro de Inscripcion</a>
+                   
                     <a asp-action="Details" asp-route-id="@item.CodCurso">Detalles</a>
                     <a asp-action="Edit" asp-route-id="@item.CodCurso">Editar</a> 
                     <a asp-action="Delete" asp-route-id="@item.CodCurso">Eliminar</a>
+                    <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+
+                        <a class="a2a_button_facebook"></a>
+                        <a class="a2a_button_whatsapp"></a>
+                        <a class="a2a_button_x"></a>
+                    </div>
+                    <script async src="https://static.addtoany.com/menu/page.js"></script>
             </td>
         </tr>
 }
